@@ -1,0 +1,66 @@
+   	*{
+   		margin: 0px;
+   		padding: 0px;
+   		list-style-type: none;
+   	}
+   	body{
+   		width: 80%;
+   		height: 800px;
+   		margin: 0px auto;
+   		border:1px solid #999;
+   		min-width:700px;
+   	}
+   	.main{
+   		position: relative;
+   		width: 95%;
+   		height: 650px;
+   		margin: 20px auto;
+   		border:1px solid #999;
+   		background-color:#eee;
+   		min-height: 500px;
+  		 min-width: 824px;
+   	}
+   	.tuandui{
+   		position: absolute;
+   		width: 200px;
+   		height: 120px;
+   		border:1px solid #999;
+   		background-color:white;
+   		margin-left: 30px;
+   		margin-top: 20px;
+   	}
+   	.tuandui img{
+   		width: 80px;
+   		height: 80px;
+   		margin-left: 30px;
+   		margin-top: 20px;
+   		border:1px solid #999;
+   	}
+   	.tuandui span{
+   		display: block;
+   		margin-top: -80px;
+   		margin-left: 120px;
+   	}
+   	.mid{
+   		width: 67%;
+   		background-color:white;
+   		border:1px solid #999;
+   		margin-top: 20px;
+   		padding: 20px;
+   		margin-left: 260px;
+   	}
+   	.geren{
+   	 	position: absolute;
+   		width: 120px;
+   		border:1px solid #999;
+   		background-color:white;
+   		right: 30px;
+		top: 20px;
+
+   	}
+   	.geren img{
+   		width: 80px;
+   		height: 80px;
+   		margin: 10px 20px;
+   		border:1px solid #999;
+   	}
