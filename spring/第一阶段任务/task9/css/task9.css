@@ -20,7 +20,7 @@ html {
   height: 56px;
   background: url(../img/header_logo.png) #2189bf 50px center no-repeat;
 }
-.header input {
+.header input[type="text"] {
   position: absolute;
   top: 14px;
   right: 156px;
@@ -34,10 +34,10 @@ html {
   -moz-transition: width 0.5s ease-out;
   -webkit-transition: width 0.5s ease-out;
 }
-.header input:hover {
+.header input[type="text"]:hover {
   width: 313px;
 }
-.header label {
+.header input[type="button"] {
   position: absolute;
   right: 94px;
   top: 19px;
@@ -121,6 +121,9 @@ html {
   width: 90%;
   margin: 0 auto;
 }
+.cont-all label {
+  font-family: "黑体 Regular";
+}
 .cont-1 {
   position: relative;
   margin-top: 19px;
@@ -196,30 +199,36 @@ html {
   font: 12px "黑体";
 }
 .cont-1-three {
-  position: relative;
-  width: 30%;
-  margin-right: 4%;
-  overflow: hidden;
+  width: 25%;
+  min-width: 400px;
+  margin: 0 3% 0 0;
 }
 .cont-1-three label {
+  font-size: 12px;
   color: #aaa;
-  font-family: "黑体 Regular";
-  margin-right: 2%;
+  margin: 0 2% 0 0;
 }
-.cont-1-three label:last-of-type {
-  margin-left: 5%;
+.cont-1-three label:nth-child(5) {
+  position: absolute;
+  right: 0px;
+  bottom: 7px;
 }
-.cont-1-three input {
-  width: 32%;
+.cont-1-three .cont-1-three-1 {
+  position: relative;
+  width: 50%;
+  float: left;
+  margin: 0 2% 0 0;
+}
+.cont-1-three .cont-1-three-1 input {
+  width: 80%;
   height: 27px;
-  border: 1px solid #cdcecf;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  padding-left: 10px;
+  border: 1px solid #d0d2d5;
+  background-color: #fff;
+  margin: 0 0 5px 0;
+  padding: 0 0 0 5px;
 }
-.cont-1-three select {
-  width: 28%;
+.cont-1-three .cont-1-three-1 select {
+  width: 55%;
   height: 27px;
   border: 1px solid #cdcecf;
   appearance: none;
@@ -227,18 +236,42 @@ html {
   -webkit-appearance: none;
   background: url(../img/select_jiantou.png) right 10px center no-repeat;
 }
-.cont-1-three select option {
+.cont-1-three .cont-1-three-1 select option {
   font: 12px "黑体";
 }
-.cont-1-three select:nth-child(5) {
-  float: right;
-  width: 33%;
+.cont-1-three .cont-1-three-2 {
+  float: left;
+  width: 45%;
+  text-align: center;
+  line-height: 27px;
+  position: relative;
 }
-.cont-1-three .cont-1-three-date {
-  margin-bottom: 5px;
-}
-.cont-1-three .cont-1-three-date select:last-child {
+.cont-1-three .cont-1-three-2 select {
+  width: 72%;
+  height: 27px;
+  border: 1px solid #cdcecf;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url(../img/select_jiantou.png) right 10px center no-repeat;
+  margin: 0 0 6px 0;
   float: right;
+}
+.cont-1-three .cont-1-three-2 select option {
+  font: 12px "黑体";
+}
+.cont-1-three .cont-1-three-2 select:last-child {
+  width: 99.9%;
+  height: 27px;
+  border: 1px solid #cdcecf;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url(../img/select_jiantou.png) right 10px center no-repeat;
+  float: right;
+}
+.cont-1-three .cont-1-three-2 select:last-child option {
+  font: 12px "黑体";
 }
 .cont-2 {
   height: 66px;
@@ -376,7 +409,7 @@ html {
   width: 55%;
   height: 366px;
   border: 1px solid #d0d2d5;
-  background-color: #ffffff;
+  background-color: #fff;
   margin-right: 1%;
 }
 .cont-4 .project-left h2 {
@@ -443,7 +476,7 @@ html {
   width: 43.5%;
   height: 366px;
   border: 1px solid #d0d2d5;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .cont-4 .project-right h2 {
   border-top-left-radius: 8px;
@@ -456,16 +489,20 @@ html {
   line-height: 40px;
   padding-left: 15px;
 }
-.cont-4 .project-right label {
+.cont-4 .project-right .project-right-1 {
+  width: 80%;
+  margin: 17px auto;
+  position: relative;
+  overflow: hidden;
+}
+.cont-4 .project-right .project-right-1 label {
   display: block;
   font-size: 12px;
   color: #c3c2c2;
   margin-left: 15px;
 }
-.cont-4 .project-right .project-right-1 {
-  width: 80%;
-  margin: 17px auto;
-  position: relative;
+.cont-4 .project-right .project-right-1 label:nth-child(5) {
+  margin-top: 5px;
 }
 .cont-4 .project-right .project-right-1 input[type="text"] {
   border-bottom: 1px solid #e7e7e7;
@@ -486,6 +523,7 @@ html {
 .cont-4 .project-right .project-right-1 input[type="checkbox"] {
   margin-top: 5px;
   margin-right: 5px;
+  margin-left: 10px;
   float: left;
 }
 .cont-4 .project-right .project-right-1 span {
