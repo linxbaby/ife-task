@@ -1,22 +1,18 @@
 @charset "utf-8";
 @import "comp.less";
 
-//点击样式
-.click-sidebar-li{
-	background-color:#383d4e;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
 
 html{
 	min-width: 1280px;
 }
 
 .header{
-	position:relative;
 	height: 56px;
 	background: url(../img/header_logo.png) #2189bf 50px center no-repeat;
+<<<<<<< HEAD
+=======
+	position: relative;
+>>>>>>> master
 	input{
 		&[type="text"]{
 			position:absolute;
@@ -48,7 +44,10 @@ html{
 			color: #fff;
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+>>>>>>> master
 }
 
 .wrap-main{
@@ -66,13 +65,81 @@ html{
 	float: left;
 	margin-left: -100%;
 	
+	.user-tab{
+		padding: 15px 0 15px 25px;
+		background-color: #383d4e;
+		font-family: "黑体";
+		cursor: default;		
+		span{
+			padding-left:20px; 
+			background: url(../img/user_tab.png) left no-repeat;
+			color: #ffffff;
+			cursor: pointer;
+		}
+
+		dl{
+			margin-left: 45px;
+			color: #6e8096;
+			
+
+			dt{
+				margin-top: 19px;
+				padding-left:37px; 
+				background: url(../img/file_t.png) left no-repeat,
+							url(../img/files.png) 17px no-repeat;
+				cursor: pointer;
+			}
+
+			dd{
+				margin: 19px 0 0 37px;
+				padding-left:17px;
+				background: url(../img/doc.png) left no-repeat;
+				cursor: pointer;
+			}
+		}
+
+		//被点击选中样式
+		.click_files{
+			color: #ffffff;
+			background: url(../img/click_file_t.png) left no-repeat,
+						url(../img/click_files.png) 17px no-repeat;
+		}
+
+		.click_doc{
+			color: #ffffff;
+			background: url(../img/click_doc.png) left no-repeat;
+		}
+		
+	}
+
 
 	ul li{
 		padding-left:45px;
 		margin-top:37px;
 		color: #6e8096;
 		font-family: "黑体";
+		cursor: pointer;
 		
+	}
+
+	.user-collect{
+		background: url(../img/menu_star.png) 20px no-repeat;
+	}
+
+	.user-share{
+		background: url(../img/menu_fx.png) 20px no-repeat;
+	}
+
+	.user-imgs{
+		background: url(../img/menu_star.png) 20px no-repeat;
+	}
+
+	.user-up{
+		background: url(../img/menu_star.png) 20px no-repeat;
+	}
+
+	.user-info{
+		background: url(../img/menu_info.png) 20px no-repeat;
 	}
 }
 
@@ -107,7 +174,7 @@ html{
 		font-family: "宋体";
 		display: inline-block;
 
-		label{
+		span{
 			font:16px "黑体";
 		}
 
@@ -133,8 +200,8 @@ html{
 		font-family: "黑体";
 		color:#b7b7b7;
 		
-		//label包含的为当前文档
-		label{
+		//span包含的为当前文档
+		span{
 			color:#6898c2;
 		}
 	}
@@ -147,6 +214,7 @@ html{
 		font-family: "黑体 Regular";
 	}
 }
+
 //第一栏内容
 .cont-1{
 	position:relative;
@@ -244,15 +312,23 @@ html{
 		select {
 			.select(72%);
 			margin:0 0 6px 0;
+<<<<<<< HEAD
 			float:right;
 			&:last-child {
 			.select(99.9%);
 			float:right;
+=======
+			float:right;
+			&:last-child {
+			.select(99.9%);
+			float:right;
+>>>>>>> master
 			}
 		}
 	}
 
 }
+
 //第二栏日期
 .cont-2{
 	height:66px;
@@ -282,7 +358,7 @@ html{
    	 	-moz-box-sizing: border-box; 
 		p{
 			text-align: center;
-			line-height: 33px;
+			line-height: 40px;
 			width:80%;
 			min-width: 150px;
 			height:33px;
@@ -297,9 +373,53 @@ html{
 		}
 	}
 }
+
+.cont-3{
+	
+	margin-top: 25px;
+	h2{
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+
+	ul{
+		overflow: hidden;
+	}
+	ul li{
+		float: left;
+		margin-right: 2%;
+	}	
+
+	.c-box-1{
+		.box-total(#43b29e);
+		
+
+	}
+
+	.c-box-2{
+		.box-total(#388ac1);
+	
+		
+	}
+
+	.c-box-3{
+		.box-total(#d04b36);
+		
+	}
+
+	.c-box-4{
+		.box-total(#e2cd47);
+		margin-right: 0;
+		float: right;		
+
+	}
+}
+
+
 //第四栏
 .cont-4{
 	margin-top: 14px;
+	overflow: hidden;
 	//第四栏左边部分
  .project-left{
 	float:left;
@@ -419,3 +539,162 @@ html{
 		}
 	}
 }
+
+.cont-5{
+
+	margin-top: 10px;
+	.date{
+		float: left;
+		.box-radius(35.5%,356px);
+		
+		table{
+			width: 90%;
+			margin:0 auto;
+			table-layout: fixed;
+
+		}
+
+		table caption{
+			margin:15px 0;
+		}
+		table caption select{
+			.date-s(24%);
+		}
+
+		table caption input[type="button"]{
+			width: 24%;
+			height: 28px;
+			background-color:#ffffff;
+			border:1px solid #cdcecf;
+			float: right;
+
+		}
+
+		thead tr{
+			height: 33px;
+			border-top: 1px solid #a9cfec;
+			border-bottom: 1px solid #e1e1e1;
+			font-family: "黑体";
+
+		}
+		
+		//加重样式(red)
+		.date-s{
+			color: #cd3539;
+		}
+
+		tbody td{
+			
+			height: 40px;
+			text-align: center;
+		}
+		
+		tbody td p{
+			line-height: 18px;
+		}
+
+
+	}
+
+	.rank{
+		float: right;
+		.box-radius(63%,356px);
+
+		table{
+			width: 90%;
+			text-align: center;
+			margin:18px auto;
+		}
+		th,td{
+			height: 24px;
+			border: 1px solid #cbcbcb;
+			
+		}
+
+		tr:hover{
+			background-color:#f4f5f7; 
+		}
+
+		td div{
+			width: 60%;
+			height: 4px;
+			margin-top: 4px;
+			background-color:#dcdcdc;
+			float: right;
+			position:relative;
+			right: 6%; 
+		}
+
+		td div span{
+			height: 4px;
+			display: block;
+		}
+		
+
+		//排行热度样式
+		.rank-c-red{
+			background-color:#ec6d51; 
+		}
+
+		.rank-c-yellow{
+			background-color:#f19e4f; 
+		}
+
+		.rank-c-blue{
+			background-color:#87cef1; 
+		}
+
+		
+		//排行榜热度条id
+		#rank-1{
+			width: 90%;
+			
+		}
+
+		#rank-2{
+			width: 70%;
+			
+		}
+		#rank-3{
+			width: 60%;
+			
+		}
+
+		#rank-4{
+			width: 55%;
+			
+		}
+		#rank-5{
+			width: 50%;
+			
+		}
+		#rank-6{
+			width: 43%;
+			
+		}
+
+		#rank-7{
+			width: 40%;
+			
+		}
+		#rank-8{
+			width: 36%;
+			
+		}
+
+		#rank-9{
+			width: 30%;
+			
+		}
+
+		#rank-10{
+			width: 28%;
+			
+		}
+
+	}
+	
+}
+
+
+
