@@ -47,7 +47,7 @@
 
 //统计box
 .box-total(@color){
-	width: 22%;
+	width: 23.5%;
 	height: 71px;
 	border:1px solid #d8d9db;
 	border-left: 3px solid @color;
@@ -80,6 +80,21 @@
 		
 	}
 }
+
+//日历的下拉选择框
+.date-s(@width){
+	width: @width;
+	height: 28px;
+	padding-right: 19px;
+	border:1px solid #cdcecf;
+	box-sizing:border-box;
+	appearance:none;
+  	-moz-appearance:none;
+  	-webkit-appearance:none;
+	background: url(../img/date_s.png) center right 10px no-repeat;
+
+}
+
 //日期box
 .box-calendar(@width){
 	width:@width;
@@ -112,3 +127,4 @@
 		color:#b2b2b2;
 	}
 }
+
