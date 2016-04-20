@@ -168,9 +168,6 @@ html {
   width: 90%;
   margin: 0 auto;
 }
-.cont-all label {
-  font-family: "黑体 Regular";
-}
 .cont-1 {
   position: relative;
   margin-top: 19px;
@@ -282,7 +279,6 @@ html {
   -moz-appearance: none;
   -webkit-appearance: none;
   background: url(../img/select_jiantou.png) right 10px center no-repeat;
-<<<<<<< HEAD
 }
 .cont-1-three .cont-1-three-1 select option {
   font: 12px "黑体";
@@ -294,19 +290,6 @@ html {
   line-height: 27px;
   position: relative;
 }
-=======
-}
-.cont-1-three .cont-1-three-1 select option {
-  font: 12px "黑体";
-}
-.cont-1-three .cont-1-three-2 {
-  float: left;
-  width: 45%;
-  text-align: center;
-  line-height: 27px;
-  position: relative;
-}
->>>>>>> master
 .cont-1-three .cont-1-three-2 select {
   width: 72%;
   height: 27px;
@@ -603,7 +586,7 @@ html {
   width: 55%;
   height: 366px;
   border: 1px solid #d0d2d5;
-  background-color: #fff;
+  background-color: #ffffff;
   margin-right: 1%;
 }
 .cont-4 .project-left h2 {
@@ -670,7 +653,7 @@ html {
   width: 43.5%;
   height: 366px;
   border: 1px solid #d0d2d5;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .cont-4 .project-right h2 {
   border-top-left-radius: 8px;
